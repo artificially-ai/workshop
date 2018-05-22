@@ -6,7 +6,7 @@ USER $NB_USER
 
 # Install TensorFlow
 RUN conda install -c conda-forge tensorflow -y && \
-    conda install -c conda-forge numpy keras nltk gensim -y
+    conda install -c conda-forge numpy keras nltk gensim opencv -y
 
 # Install Reinforcement Learning packages:
 RUN pip install gym==0.9.4
