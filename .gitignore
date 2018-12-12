@@ -112,3 +112,6 @@ ENV/
 **/17flowers
 **/model_output
 *.h5
+
+dataset/**
+notebooks/models/**
