@@ -1,7 +1,7 @@
 version: '3'
 services:
   scoresup-ai:
-    image: "deeplearning/workshop"
+    image: "ekholabs/deeplearning-stack"
     build:
       context: .
       dockerfile: Dockerfile

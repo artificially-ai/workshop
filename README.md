@@ -15,7 +15,7 @@ docker build -t ekholabs/deeplearning-stack .
 Once you have built the image, please execute the command below to run the container.
 
 ```
-docker run -v [path_to_project]/workshop:/home/jovyan/work --rm -p 8888:8888 ekholabs/deeplearning-stack
+docker-compose up
 ```
 
 * Remark: 'jovyan' is the default Docker user.
