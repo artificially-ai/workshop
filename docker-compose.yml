@@ -1,0 +1,15 @@
+version: '3'
+services:
+  scoresup-ai:
+    image: "deeplearning/workshop"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "dl-workshop"
+    working_dir: "/dl-workshop"
+    volumes:
+      - .:/dl-workshop
+    expose:
+      - "8888"
+    ports:
+      - "8888:8888"

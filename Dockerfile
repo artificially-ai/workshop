@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook
+FROM jupyter/datascience-notebook
 
 MAINTAINER Wilder Rodrigues (wilder.rodrigues@ekholabs.ai)
 
@@ -11,5 +11,8 @@ RUN conda install -c conda-forge tensorflow -y && \
 # Install Reinforcement Learning packages:
 RUN pip install gym==0.9.4
 
-# Install Keras Kontrib
+# Install Keras Contrib
 RUN pip install git+https://www.github.com/keras-team/keras-contrib.git
+
+RUN pip install npm jupyterlab
+RUN jupyter serverextension enable --py jupyterlab
