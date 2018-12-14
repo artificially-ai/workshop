@@ -1,6 +1,6 @@
 version: '3'
 services:
-  scoresup-ai:
+  dl-stack:
     image: "ekholabs/deeplearning-stack"
     build:
       context: .
