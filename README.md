@@ -2,6 +2,11 @@
 
 The examples cover a straightforward start, from shallow to intermediate, deep and CNN networks. It also shows how the trained model can be tested and evaluated.
 
+## Requirements
+
+* Anaconda 3
+* Docker Desktop
+
 ## Build Docker Image
 
 After cloning this repository, please execute the command below to build the Docker image.
@@ -43,7 +48,7 @@ it instead of a docker container. To create, activate and run Jupyter Lab from t
 If you want to visualise the loss and accuracy metrics, just execute TensorBoard pointing to your logs directory:
 
 ```
-tensorboard --logdir [path_to_project]/DLinK/notebooks/logs
+tensorboard --logdir [path_to_project]/notebooks/logs
 ````
 
 * Remark: the 'logs' directory is not part of the repository. It has to be created under the 'notebooks' directory. All the Jupyter notebook are already configured to use 'notebooks/logs' for the TensorBoard files.
