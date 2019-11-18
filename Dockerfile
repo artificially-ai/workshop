@@ -6,10 +6,7 @@ USER $NB_USER
 
 # Install TensorFlow
 RUN conda install -c conda-forge tensorflow -y && \
-    conda install -c conda-forge numpy keras nltk gensim opencv -y
-
-# Install Reinforcement Learning packages:
-RUN pip install gym==0.9.4
+    conda install -c conda-forge numpy keras nltk pandas gensim opencv -y
 
 # Install Keras Contrib
 RUN pip install git+https://www.github.com/keras-team/keras-contrib.git

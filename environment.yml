@@ -1,0 +1,21 @@
+name: dl-workshop
+dependencies:
+  - python==3.6.8
+  - pip:
+      - tensorflow
+      - keras
+      - numpy
+      - scipy
+      - scikit-learn
+      - pillow
+      - opencv-python
+      - pandas
+      - nltk
+      - gensim
+      - bokeh
+      - Flask
+      - requests
+      - pyyaml
+      - jupyterlab
+      - matplotlib
+      - git+https://www.github.com/keras-team/keras-contrib.git

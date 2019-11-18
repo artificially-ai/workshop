@@ -7,7 +7,7 @@ The examples cover a straightforward start, from shallow to intermediate, deep a
 After cloning this repository, please execute the command below to build the Docker image.
 
 ```
-docker build -t ekholabs/deeplearning-stack .
+docker build -t deeplearning-stack .
 ```
 
 ## Run Docker Container
@@ -25,6 +25,18 @@ docker-compose up
 After starting the Docker container, copy the Jupyter notebook URL and start working.
 
 * Remark: if you face problems concerning lack of resources, please increase your Docker Engine memory. I tested the notebooks in a MacBook Pro with 16GB of RAM. I dedicated 5GB to my Docker Engine.
+
+## Running with Anaconda
+
+The project also has a `environment.yml` file that can be used to create an Anaconda environment. One might be willing to use
+it instead of a docker container. To create, activate and run Jupyter Lab from the environment, check the commands below:
+
+* ```conda env create -f environment.yml```
+  - This will create the `dl-workshop` environment.
+* ```conda activate dl-workshop```
+  - This will activate the environment.
+* ```jupyter-lab```
+  - This will start Jupyter Lab and open it in the browser.
 
 ## TensorBoard
 
